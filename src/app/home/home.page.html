@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+     Welcome to Runz
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +9,16 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Welcome to Runz</ion-title>
+      
     </ion-toolbar>
   </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  
+  <ul>
+    <ion-button shape="round" color="success"  size="normal"><li [routerLink]="['/funfacts']" routerDirections="forward">Fun facts</li></ion-button>
+    <ion-button shape="round" color="tertiary"  size="normal"><li [routerLink]="['/diets']" routerDirections="forward">Diets</li></ion-button>
+    <ion-button shape="round" color="warning"  size="normal"><li [routerLink]="['/gadgets']" routerDirections="forward">Gadgets</li></ion-button>
+    <ion-button shape="round" color="secondary"  size="normal"><li [routerLink]="['/contact']" routerDirections="forward">Contact</li></ion-button>
+  </ul>
+  
 </ion-content>
